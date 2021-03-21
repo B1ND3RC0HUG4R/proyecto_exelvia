@@ -4,11 +4,17 @@ html, body{
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #3498db;
+  background-color: #165090;
 }
 
-h1, h2, h3, h4, h5 ,h6{
-  font-weight: 200;
+h1, h2, h3, h4{ 
+  font-weight: 200; 
+  color: #ffffff;
+}
+
+h5{ 
+  font-weight: 200; 
+  color: #c6393c;
 }
 
 a{
@@ -19,10 +25,28 @@ p, li, a{
   font-size: 14px;
 }
 
-fieldset{
-  margin: 0;
-  padding: 0;
-  border: none;
+.box { 
+  position: absolute;
+  left: 10px;
+  width: 400px;
+}
+
+.box2 { 
+margin-left: 200px;
+}
+
+fieldset {
+  background-color: #ffffff;
+  border-top-left-radius: 20px 20px; 
+  border-top-right-radius: 20px 20px;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+}
+
+legend {
+  background-color: #c6393c;
+  color: white;
+  padding: 5px 10px;
 }
 
 /* GRID */
@@ -91,7 +115,11 @@ fieldset{
   margin: 0;
   padding: 0;
   background-color: #fff;
-  text-align: center;
+  text-align: center; 
+  border-top-left-radius: 40px 40px; 
+  border-top-right-radius: 40px 40px;
+  border-bottom-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
 }
 
 
@@ -103,8 +131,8 @@ fieldset{
 }
 
 .steps li.is-active{
-  border-bottom: 1px solid #3498db;
-  color: #3498db;
+  border-bottom: 1px solid #c6393c;
+  color: #c6393c;
 }
 
 /* FORM */
@@ -147,7 +175,7 @@ fieldset{
 }
 
 .form-wrapper .button, .form-wrapper .submit{
-  background-color: #3498db;
+  background-color: #c6393c;
   display: inline-block;
   padding: 8px 30px;
   color: #fff;
