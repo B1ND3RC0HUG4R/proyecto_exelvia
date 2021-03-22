@@ -16,13 +16,9 @@ class Conexion{
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         );
 
-        try{
-            $dns= 'mysql:host='.$db['host'].';dbname='.$db['db'].';charset=utf8';
-            $this->conexion = new PDO($dns, $db['username'], $db['password'], $options);
-        }catch(PDOException $e){
-            echo "Fallo la conexion: ".$e->getMessage();
-            exit;
-        }
+        $this->conexion = new mysqli($db['host'], $db['username'], $db['password'],$db['db']) or 
+        die("Connect failed: %s\n". $conn -> error);
+        $this->conexion->set_charset("UTF8");
     }
 
     public function getConexion(){

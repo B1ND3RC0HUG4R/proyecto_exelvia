@@ -10,7 +10,7 @@ class Rest{
 
     public function response($data, $estado){
         $this->_codEstado = ($estado) ? $estado : 500;
-        $this->setCabecera($estado);
+        $this->setCabecera();
         echo $data;
         exit;
     }
